@@ -13,7 +13,7 @@ from huggingface_hub import snapshot_download as hf_download
 from huggingface_hub.utils import RepositoryNotFoundError
 
 # 配置区
-MODEL_ID = 'tencent/HY-MT1.5-1.8B-GPTQ-Int4'
+MODEL_ID = 'Tencent-Hunyuan/HY-MT1.5-7B'
 LOCAL_DIR = './model_files'
 
 def smart_download(model_id, local_dir):

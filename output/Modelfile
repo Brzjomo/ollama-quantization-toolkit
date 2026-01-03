@@ -1,0 +1,8 @@
+FROM ./Tencent-HunyuanHY-MT1.5-1.8B.gguf
+
+TEMPLATE """{{ if .System }}<|startoftext|>{{ .System }}<|extra_4|>{{ end }}{{ if .Prompt }}<|startoftext|>{{ .Prompt }}<|extra_0|>{{ end }}"""
+
+PARAMETER top_k 20
+PARAMETER top_p 0.6
+PARAMETER repeat_penalty 1.05
+PARAMETER temperature 0.7
